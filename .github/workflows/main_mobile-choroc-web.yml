@@ -92,9 +92,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: pnpm install, build, and test
-        run: |
-          pnpm install
+#      - name: pnpm install, build, and test
+#        run: |
+#          pnpm install
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
