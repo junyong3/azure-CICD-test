@@ -1,0 +1,107 @@
+/*.pay-button:before {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  left: 0;*/
+/*  width: 100%;*/
+/*  height: 4px;*/
+/*  background: var(--c-background);*/
+/*  border-radius: 2px;*/
+/*  display: block;*/
+/*  top: 50%;*/
+/*  margin-top: -2px;*/
+/*  transform-origin: 0 100%;*/
+/*  transform: rotateX(90deg);*/
+/*}*/
+
+/*.pay-button .default, .pay-button .success {*/
+/*  display: block;*/
+/*  font-weight: bold;*/
+/*  font-size: 20px;*/
+/*  line-height: 24px;*/
+/*  opacity: var(--o, var(--default-o));*/
+/*}*/
+
+/*.pay-button .success {*/
+/*  --o: var(--success-o);*/
+/*  position: absolute;*/
+/*  top: 15px;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*}*/
+
+/*.pay-button .success svg {*/
+/*  width: 16px;*/
+/*  height: 14px;*/
+/*  display: inline-block;*/
+/*  vertical-align: top;*/
+/*  fill: none;*/
+/*  margin: 5px 0 0 8px;*/
+/*  stroke: var(--c-color);*/
+/*  stroke-width: 2;*/
+/*  stroke-linecap: round;*/
+/*  stroke-linejoin: round;*/
+/*  stroke-dasharray: 16px;*/
+/*  stroke-dashoffset: var(--success-offset);*/
+/*}*/
+
+/*.pay-button .truck-wrapper {*/
+/*  position: absolute;*/
+/*  pointer-events: none;*/
+/*  top: -140px;*/
+/*  left: -100px;*/
+/*  right: -40px;*/
+/*  bottom: 0px;*/
+/*  overflow: hidden;*/
+/*  transform: translateY(var(--truck-wrapper-y)) rotateX(90deg);*/
+/*  --webkit-mask-image: linear-gradient(to left, transparent 0%, black 60px, black);*/
+/*  mask-image: linear-gradient(to left, transparent 0%, black 60px, black);*/
+/*}*/
+
+/*.pay-button .truck-wrapper .truck {*/
+/*  position: absolute;;*/
+/*  top: 24px;*/
+/*  left: 100px;*/
+/*  width: 72px;*/
+/*  height: 60px;*/
+/*  transform: translate3d(var(--truck-base-x), var(--truck-y), 0);*/
+/*}*/
+
+/*.pay-button .truck-wrapper .truck:before, .pay-button .truck-wrapper .truck:after {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  bottom: -9px;*/
+/*  left: var(--l, 25px);*/
+/*  width: 16px;*/
+/*  height: 16px;*/
+/*  border-radius: 50%;*/
+/*  z-index: 2;*/
+/*  box-shadow: inset 0 0 0 3px var(--c-wheel), inset 0 0 0 6px var(--c-wheel-inner);*/
+/*  background: var(--c-wheel-dot);*/
+/*  transform: translateY((var(--truck-y) * -1));*/
+/*translateZ(0);*/
+
+/*}*/
+
+/*.pay-button .truck-wrapper .truck:before {*/
+/*  --l: 85px;*/
+/*}*/
+
+
+/*.pay-button. .truck-wrapper .truck .wheel, .pay-button .truck-wrapper .truck .wheel:before {*/
+/*  position: absolute;*/
+/*  bottom: var(--b, -9px);*/
+/*  left: var(--l, 6px);*/
+/*  width: 16px;*/
+/*  height: 16px;*/
+/*  border-radius: 50%;*/
+/*  background: var(--c-wheel);*/
+/*  transform:translateZ(0);*/
+/*}*/
+/*.pay-button .truck-wrapper .truck .wheel{*/
+/*  transform:translateY(var(--truck-y) * 1) translateZ(0);*/
+/*}*/
+/*.pay-button .truck-wrapper .truck .wheel:before {*/
+/*  --l: 60px;*/
+/*  --b: -9px;*/
+/*  content:'';*/
+/*}*/
